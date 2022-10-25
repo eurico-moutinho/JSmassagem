@@ -100,11 +100,6 @@ function Hero() {
           frameBorder="0"
         ></iframe>
       </section>
-      <footer>
-        <p>
-          <i className="fa-regular fa-copyright"></i> 2022
-        </p>
-      </footer>
     </>
   );
 }
