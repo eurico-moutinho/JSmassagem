@@ -9,35 +9,45 @@ function Services() {
         <h1>Serviços</h1>
         <div className="servCard">
           <div className="figure">
-            <img src="../massagemdesport.jpg" />
+            <NavLink to="/massagemDesportiva">
+              <img src="../massagemdesport.jpg" />
+            </NavLink>
             <figcaption>Massagem Desportiva</figcaption>
           </div>
           <div className="figure">
-            <img src="../massagemtera.jpg" />
+            <NavLink to="/massagemTerapeutica">
+              <img src="../massagemtera.jpg" />
+            </NavLink>
             <figcaption>Massagem Terapêutica</figcaption>
           </div>
           <div className="figure">
-            <img src="../cupping.jpg" />
+            <NavLink to="/ventosaterapia">
+              <img src="../cupping.jpg" />
+            </NavLink>
             <figcaption>Ventosaterapia</figcaption>
           </div>
           <div className="figure">
-            <img src="../pressotherapy.jpg" />
+            <NavLink to="/pressoterapia">
+              <img src="../pressotherapy.jpg" />
+            </NavLink>
             <figcaption>Pressoterapia</figcaption>
           </div>
           <div className="figure">
-            <img src="../osteopathy.jpg" />
+            <NavLink to="/osteopatia">
+              <img src="../osteopathy.jpg" />
+            </NavLink>
             <figcaption>Osteopatia</figcaption>
           </div>
         </div>
-        <h1>
-          Se algum destes serviços lhe interessar pode fazer a sua marcação{" "}
+        <p id="hm">
+          Pode fazer a sua marcação{" "}
           <NavLink
             style={{ color: "blue", textDecoration: "none" }}
             to="/marcacao"
           >
             aqui
           </NavLink>
-        </h1>
+        </p>
         <div
           id="carouselExampleIndicators"
           className="carousel slide"

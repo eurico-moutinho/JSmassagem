@@ -20,13 +20,13 @@ function Hero() {
                 Usufrua de uma massagem desportiva feita por um massagista
                 desportivo especialista.
               </span>
-              <div id="paragraph">
+              <span id="paragraph">
                 Faça a marcação
                 <br />
                 <NavLink style={{ color: "white" }} to="/marcacao">
                   Aqui
                 </NavLink>
-              </div>
+              </span>
             </p>
           </div>
         </div>
@@ -60,19 +60,23 @@ function Hero() {
         <div>
           <h1>Contactos:</h1>
           <br />
-          <p>Horário:</p>
+          <p>
+            <b>Horário:</b>
+          </p>
           <p>Segunda-Sexta: 10:00 - 20:00</p>
           <p>Sábados, Domingos e Feriados: Encerrado</p>
           <br />
-          <p>Telefone: 915 483 010</p>
           <p>
-            Email:{" "}
+            <b>Telefone:</b> 915 483 010
+          </p>
+          <p>
+            <b>Email:</b>{" "}
             <a href="mailto:jsilva.massagem@gmail.com">
               jsilva.massagem@gmail.com
             </a>
           </p>
           <p>
-            Social Network:{" "}
+            <b>Social Network:</b>{" "}
             <a
               target="_blank"
               href="https://www.instagram.com/jsilva.massagem/?hl=en"
@@ -87,7 +91,9 @@ function Hero() {
             </a>
           </p>
           <br />
-          <p>Morada:</p>
+          <p>
+            <b>Morada:</b>
+          </p>
           <p>
             Rua Carlos Paião 9B, Vila Fria
             <br />
