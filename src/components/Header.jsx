@@ -15,8 +15,8 @@ function Header() {
       <nav>
         <div>
           <a href="/" id="head">
-            <img src="../logo.png" id="logo" />
-            <p>JSilva Massagem</p>
+            <img src="../logo.png" id="logo1" />
+            <p style={{ color: "white" }}>JSilva Massagem</p>
           </a>
         </div>
 

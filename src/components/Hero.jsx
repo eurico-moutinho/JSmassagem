@@ -1,6 +1,7 @@
 import React from "react";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 function Hero() {
   const ref = useRef(null);
@@ -11,43 +12,44 @@ function Hero() {
   return (
     <>
       <section id="hero">
-        <div className={"container"}>
+        <div className="container">
           <img src="../banner.png" id="imghero" />
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-evenly",
-              flexWrap: "wrap",
-            }}
-          >
+          <div className="ban">
             <p>
               <span>
                 Usufrua de uma massagem desportiva feita por um massagista
                 desportivo especialista.
               </span>
-              <a href="#contacts">Contacte-nos</a>
+              <div id="paragraph">
+                Faça a marcação
+                <br />
+                <NavLink style={{ color: "white" }} to="/marcacao">
+                  Aqui
+                </NavLink>
+              </div>
             </p>
           </div>
         </div>
       </section>
 
-      <section
-        ref={ref}
-        id="about"
-        className={isInView ? "slider slider--zoom" : "slider"}
-      >
-        <div>
-          <h1>Sobre:</h1>
-          <br />
-          <p>
-            Massagista e Terapeuta certificado com experiência na ârea desde
-            2016. Em 2020 foi criado este centro de recuperação com o intuito de
-            colaborar na recuperação do seu desempenho físico e mental, usando
-            uma combinação de massagens e outras técnicas terapeuticas.
-          </p>
+      <section id="about">
+        <div
+          ref={ref}
+          id="subabout"
+          className={isInView ? "slider slider--zoom" : "slider"}
+        >
+          <div>
+            <h1>Sobre:</h1>
+            <br />
+            <p>
+              Massagista e Terapeuta certificado com experiência na ârea desde
+              2016. Em 2020 foi criado este centro de recuperação com o intuito
+              de colaborar na recuperação do seu desempenho físico e mental,
+              usando uma combinação de massagens e outras técnicas terapeuticas.
+            </p>
+          </div>
+          <img src="../about.jpg" alt="about" />
         </div>
-        <img src="../about.jpg" alt="about" />
       </section>
 
       <section

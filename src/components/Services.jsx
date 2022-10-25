@@ -1,4 +1,6 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { NavLink } from "react-router-dom";
 
 function Services() {
   return (
@@ -6,33 +8,42 @@ function Services() {
       <section id="services">
         <h1>Serviços</h1>
         <div className="servCard">
-          <figure>
+          <div className="figure">
             <img src="../massagemdesport.jpg" />
             <figcaption>Massagem Desportiva</figcaption>
-          </figure>
-          <figure>
+          </div>
+          <div className="figure">
             <img src="../massagemtera.jpg" />
             <figcaption>Massagem Terapêutica</figcaption>
-          </figure>
-          <figure>
+          </div>
+          <div className="figure">
             <img src="../cupping.jpg" />
             <figcaption>Ventosaterapia</figcaption>
-          </figure>
-          <figure>
+          </div>
+          <div className="figure">
             <img src="../pressotherapy.jpg" />
             <figcaption>Pressoterapia</figcaption>
-          </figure>
-          <figure>
+          </div>
+          <div className="figure">
             <img src="../osteopathy.jpg" />
             <figcaption>Osteopatia</figcaption>
-          </figure>
+          </div>
         </div>
+        <h1>
+          Se algum destes serviços lhe interessar pode fazer a sua marcação{" "}
+          <NavLink
+            style={{ color: "blue", textDecoration: "none" }}
+            to="/marcacao"
+          >
+            aqui
+          </NavLink>
+        </h1>
         <div
           id="carouselExampleIndicators"
           className="carousel slide"
           data-bs-ride="true"
         >
-          <div class="carousel-indicators">
+          <div className="carousel-indicators">
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
