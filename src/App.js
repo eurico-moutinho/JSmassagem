@@ -23,6 +23,7 @@ function App() {
         <Route path="/massagemTerapeutica" element={<Massagemterapeutica />} />
         <Route path="/ventosaterapia" element={<Ventosaterapia />} />
         <Route path="/osteopatia" element={<Osteopatia />} />
+        <Route path="/pressoterapia" element={<Pressoterapia />} />
       </Routes>
       <Footer />
     </div>
