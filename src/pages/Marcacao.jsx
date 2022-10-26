@@ -1,6 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 function Marcacao() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_YOUR_SERVICE_ID,
+        process.env.REACT_APP_YOUR_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_YOUR_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <div id="marcacao">
       <h1>Contactos</h1>
@@ -26,13 +50,7 @@ function Marcacao() {
             <b>Número de telefone:</b> 915 483 010
           </p>
           <p>Ou então use o seguinte formulário para enviar por email:</p>
-          <form
-            method="post"
-            action="mailto:jsilva.massagem@gmail.com"
-            encType="multipart/form-data"
-            name="EmailForm"
-            className="d-flex flex-column"
-          >
+          <form ref={form} onSubmit={sendEmail} className="d-flex flex-column">
             <label>Nome</label>
             <input type="text" name="name" required />
             <label>Email</label>
