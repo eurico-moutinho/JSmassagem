@@ -277,15 +277,20 @@ figcaption {
 }
 
 #hm {
-  margin: auto;
-  text-align: center;
   color: rgb(1, 185, 181);
   font-size: max(30px);
   font-weight: bold;
-  border: 3px groove rgb(1, 185, 181);
   border-radius: 10px;
   margin-bottom: 60px;
-  max-width: 600px;
+}
+
+#banner {
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+.carousel {
+  background-color: rgb(1, 185, 181);
 }
 
 #form {
@@ -418,5 +423,9 @@ article p {
   }
   #hm {
     font-size: 24px;
+  }
+
+  #banner {
+    width: 90vw;
   }
 }

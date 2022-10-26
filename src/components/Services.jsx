@@ -39,15 +39,18 @@ function Services() {
             <figcaption>Osteopatia</figcaption>
           </div>
         </div>
-        <p id="hm">
-          Pode fazer a sua marcação{" "}
-          <NavLink
-            style={{ color: "blue", textDecoration: "none" }}
-            to="/marcacao"
-          >
-            aqui
-          </NavLink>
-        </p>
+        <div className="d-flex flex-wrap align-items-center justify-content-around">
+          <img src="../banner.jpg" id="banner" />
+          <p id="hm">
+            Pode fazer a sua marcação{" "}
+            <NavLink
+              style={{ color: "blue", textDecoration: "none" }}
+              to="/marcacao"
+            >
+              aqui
+            </NavLink>
+          </p>
+        </div>
         <div
           id="carouselExampleIndicators"
           className="carousel slide"
