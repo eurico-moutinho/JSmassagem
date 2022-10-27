@@ -6,7 +6,7 @@ function Pressoterapia() {
       <h1>Pressoterapia</h1>
       <div>
         <article>
-          <img src="../pressotherapy.jpg" />
+          <img src="../pressotherapy.jpg" alt="Pressoterapia" />
           <p>
             A Pressoterapia (ou drenagem linfática mecânica) consiste num
             procedimento no qual se introduzem as pernas e braços em botas e

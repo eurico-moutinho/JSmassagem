@@ -6,7 +6,7 @@ function MassagemDesportiva() {
       <h1>Massagem Desportiva</h1>
       <div>
         <article>
-          <img src="../massagemdesport.jpg" />
+          <img src="../massagemdesport.jpg" alt="Massagem Desportiva" />
           <p>
             Os atletas após submeterem-se a um intenso esforço físico, sofrem
             sintomas de dores musculares, dores nas articulações e inflamações

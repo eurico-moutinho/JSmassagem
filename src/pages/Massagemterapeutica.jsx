@@ -6,7 +6,7 @@ function Massagemterapeutica() {
       <h1>Massagem Terapeutica</h1>
       <div>
         <article>
-          <img src="../massagemtera.jpg" />
+          <img src="../massagemtera.jpg" alt="Massagem Terapeutica" />
           <p>
             As massagens terapêuticas têm como objetivo aliviar a dor resultante
             do stress, das contraturas musculares, das dores devido a postura ou

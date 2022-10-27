@@ -6,7 +6,7 @@ function Ventosaterapia() {
       <h1>Ventosaterapia</h1>
       <div>
         <article>
-          <img src="../cupping.jpg" />
+          <img src="../cupping.jpg" alt="Ventosaterapia, cupping" />
           <p>
             A Ventosaterapia é um tratamento com copos “cups” que produzem vácuo
             quando contraídos na pele. O vácuo criado pela ventosa na pele

@@ -6,7 +6,7 @@ function Osteopatia() {
       <h1>Osteopatia</h1>
       <div>
         <article>
-          <img src="../osteopathy.jpg" />
+          <img src="../osteopathy.jpg" alt="Osteopatia" />
           <p>
             A osteopatia é a terapêutica que tem como objetivo diagnosticar
             diferencialmente, tratar e prevenir distúrbios
