@@ -10,11 +10,13 @@ import Massagemterapeutica from "./pages/Massagemterapeutica";
 import Ventosaterapia from "./pages/Ventosaterapia";
 import Pressoterapia from "./pages/Pressoterapia";
 import Osteopatia from "./pages/Osteopatia";
+import ScrollTop from "./components/ScrollTop";
 
 function App() {
   return (
     <div>
       <Header />
+      <ScrollTop />
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/services" element={<Services />} />
